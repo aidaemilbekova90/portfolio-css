@@ -1,12 +1,12 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 :root {
   --accent: #174180;
   --accent-light: #3764a7;
   --pure-white: #fff;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -122,6 +122,18 @@ header-logo img {
   list-style: none;
 }
 
+.education {
+  margin-bottom: 60px;
+}
+.education ul {
+  gap: 35px;
+  margin: 10px;
+  padding: 30px;
+}
+.education li {
+  padding: 10px 25px;
+}
+
 .skills {
   color: var(--pure-white);
   background-color: var(--accent);
@@ -171,4 +183,75 @@ header-logo img {
 .languages li {
   padding: 5px;
   margin: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.wrapper div img {
+  width: 100%;
+}
+/* 
+.item-1 {
+  background-color: black;
+}
+
+.item-2 {
+  background-color: aqua;
+}
+.item-3 {
+  background-color: fuchsia;
+} */
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 30px auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 14px 40px;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+
+.btn--red {
+  background-color: #3d3a94;
+}
+
+.btn--red:hover {
+  background-color: #e41b1b;
+}
+
+.footer {
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_inner a {
+  padding: 10px 25px;
+  color: var(--pure-white);
+  text-decoration: none;
+  gap: 10px;
 }
